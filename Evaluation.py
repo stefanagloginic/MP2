@@ -150,6 +150,9 @@ def is_time_exceeded(start_time):
 	return((time()-start_time) >= b.Board.time_limit)		
 
 def iterative_deepening(board, start_time):
+	global evaluated 
+	evaluated = "complete"
+
 	depth = 0
 	act = Actions(board)
 	array_of_0 = [0 for val in range(len(act))]
@@ -159,7 +162,9 @@ def iterative_deepening(board, start_time):
 	while(not(is_time_exceeded(start_time))):
 		
 		actions = alpha_beta_search(board, depth, actions, start_time) #will return when it sees it exceeded time limit
-		if(actions == "incomplete"):
+		if(evaluated == "incomplete"):
+			if(len(final_ordered_actions) == 0):
+				return actions[0][0]	
 			return final_ordered_actions[0][0] #return the action with maximum value 
 		
 		final_ordered_actions = actions
@@ -200,7 +205,9 @@ def alpha_beta_search(board, depth_lim, actions_list, start_time): #from AI book
 	for act in actions_list: #alpha_beta_search's code
 		
 		if(is_time_exceeded(start_time)):
-			return "incomplete"
+			evaluated = "incomplete"
+			sorted_actions.sort(key=itemgetter(1), reverse=True) #return the list of actions sorted according to the highest value
+			return sorted_actions
 
 		(coordinates, value) = act
 		val = min_value(Result(board, coordinates), NEG_INF, INF, 0, start_time)
