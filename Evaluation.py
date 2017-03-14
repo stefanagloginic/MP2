@@ -73,7 +73,7 @@ def evaluation(board):
 
 		total_sum_black += pow(4, black_connect) #connect will always be at least 1. 
 		if(black_connect == 4):
-			pow(4, black_connect)
+			total_sum_black += pow(4, black_connect)
 		if(black_connect == 5):
 			total_sum_black += 2*(pow(4, black_connect))
 
@@ -84,9 +84,11 @@ def evaluation(board):
 			(row, col) = pair
 			white_connect += board.check_connection(coordinates, (-row,-col), b.Board.white_player)
 
+		if(white_connect == 4):
+			total_sum_white += pow(4, white_connect)
 		total_sum_white += pow(4, white_connect) 
 		if(white_connect == 5):
-			total_sum_white += pow(4, white_connect)
+			total_sum_white += 2*(pow(4, white_connect))
 
 	if(board.player == board.white_player):
 		return(total_sum_white-total_sum_black)
