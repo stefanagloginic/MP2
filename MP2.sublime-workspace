@@ -1,0 +1,442 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"alig",
+				"align-items"
+			],
+			[
+				"text",
+				"textarea\tTag"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"forEac",
+				"forEach"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "MP2.sublime-project",
+			"settings":
+			{
+				"buffer_size": 282,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Evaluation.py",
+			"settings":
+			{
+				"buffer_size": 3981,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "import Board"
+			}
+		},
+		{
+			"file": "Gobang.py",
+			"settings":
+			{
+				"buffer_size": 3744,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Board.py",
+			"settings":
+			{
+				"buffer_size": 3426,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "class Board:"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 1000.0,
+		"last_filter": "package",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"brow",
+				"View In Browser"
+			]
+		],
+		"width": 1180.0
+	},
+	"console":
+	{
+		"height": 363.0,
+		"history":
+		[
+			"npm install --save react-fontawesome",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Stefana/Desktop/CS 165A/MP2"
+	],
+	"file_history":
+	[
+		"/C/Users/Stefana/Desktop/Web_Projects/Facilities_Department/Construction_Website/template.css",
+		"/C/Users/Stefana/Desktop/Web_Projects/Facilities_Department/Construction_Website/ReactForm.jsx",
+		"/C/Users/Stefana/Desktop/Web_Projects/Facilities_Department/Construction_Website/main.html",
+		"/C/Users/Stefana/Desktop/Web_Projects/Facilities_Department/Construction_Website/form.css",
+		"/C/Users/Stefana/Desktop/Web_Projects/Facilities_Department/Construction_Website/admin_form.css",
+		"/C/Users/Stefana/Desktop/Web_Projects/Facilities_Department/Construction_Website/admin_form.html",
+		"/C/Users/Stefana/Desktop/Web_Projects/Facilities_Department/Construction_Website/form.html",
+		"/C/Users/Stefana/Desktop/Web_Projects/Facilities_Department/Construction_Website/form.jsx",
+		"/C/Users/Stefana/Desktop/Web_Projects/Facilities_Department/Construction_Website/Accordion.jsx",
+		"/C/Users/Stefana/Desktop/Web_Projects/Facilities_Department/Construction_Website/Construction_Website.sublime-project",
+		"/C/Users/Stefana/Desktop/reactCode/main.css",
+		"/C/Users/Stefana/Desktop/reactCode/accordianReact.js",
+		"/C/Users/Stefana/Desktop/reactCode/accordian.html",
+		"/C/Users/Stefana/Desktop/reactCode/react.js",
+		"/C/Users/Stefana/Desktop/reactCode/react-dom.js",
+		"/C/Users/Stefana/Desktop/reactCode/browser.min.js",
+		"/C/Users/Stefana/Desktop/accordianReact.js",
+		"/C/Users/Stefana/Desktop/main.css",
+		"/C/Users/Stefana/Desktop/accordian.html",
+		"/C/Users/Stefana/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings"
+	],
+	"find":
+	{
+		"height": 86.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"print",
+			"is_occupied",
+			"move_played",
+			"move_made",
+			"State",
+			"actions",
+			"print",
+			"get_time",
+			"is_time_exceeded",
+			"connect",
+			"in_scope",
+			"is_board_full",
+			"move",
+			"self",
+			"background",
+			"px",
+			"content",
+			"title",
+			"content",
+			"aspx",
+			"map",
+			"props",
+			"mainContent",
+			"content",
+			"sneakPeak",
+			"background-color",
+			"font-size",
+			"overflow",
+			"forms",
+			"content",
+			"title",
+			"sneakPeak",
+			"formItem",
+			"formItems",
+			"content"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "MP2.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19,
+								19
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Evaluation.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3981,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1533,
+								1536
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"auto_name": "import Board",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 4289.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Gobang.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3744,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2440,
+								2440
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2285.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Board.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3426,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								78,
+								78
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"auto_name": "class Board:",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 55.0
+	},
+	"input":
+	{
+		"height": 76.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "MP2.sublime-project",
+	"replace":
+	{
+		"height": 106.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 603.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
