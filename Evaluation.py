@@ -54,11 +54,66 @@ def get_my_player(board):
 	return board.my_player
 
 
+def evaluation(board):
+	"""This is my evaluation function"""
+
+	directions = [(1,0), (0,1), (1,1), (1,-1)]
+
+	sum_white = 0
+	sum_black = 0
+	
+	for white_pieces in board.white:
+		"""for each piece calculate all possible in a row connections and apply value"""
+		for pair in directions:
+			first_direction = board.check_connection(white_pieces, pair, b.Board.white_player)
+			(row_move, col_move) = pair
+			new_pair = (-row_move, -col_move)
+			second_direction = board.check_connection(white_pieces, new_pair, b.Board.white_player)
+
+			total_size = first_direction + second_direction
+
+			if(total_size == 1):
+				sum_white += 10
+			if(total_size == 2):
+				sum_white += 100
+			if(total_size == 3):
+				sum_white += 1000 #if(COLOR != s.State.white) else 500
+			if(total_size == 4):
+				sum_white += 10000 #if(COLOR != s.State.white) else 5000
+			if(total_size + 1 == 5):
+				sum_white += 100000 #if(COLOR != s.State.white) else 150000
+
+	for black_piece in board.black:
+		"""for each piece calculate all possible in a row connections and apply value"""
+		for pair in directions:
+			first_direction = board.check_connection(black_pieces, pair, b.Board.black_player)
+			(row_move, col_move) = pair
+			new_pair = (-row_move, -col_move)
+			second_direction = board.check_connection(black_pieces, new_pair, b.Board.black_player)
+
+			total_size = first_direction + second_direction
+
+			if(total_size == 1):
+				sum_black += 10
+			if(total_size == 2):
+				sum_black += 100
+			if(total_size == 3):
+				sum_black += 1000 
+			if(total_size == 4):
+				sum_black += 10000 #if(COLOR != s.State.black) else 5000
+			if(total_size + 1 == 5):
+				sum_black += 100000 #if(COLOR != s.State.black) else 150000
+
+	state_eval = (sum_white - sum_black) if(board.player == b.Board.white_player) else (sum_black - sum_white)
+
+	return state_eval
+
+
 """def evaluation(board):
 	return random.randint(0, 1000)
 """
 
-def evaluation(board):
+'''def evaluation(board):
 	directions = [(1,0), (0,1), (1,1), (1,-1)]
 
 	total_sum_white = 0
@@ -93,7 +148,7 @@ def evaluation(board):
 
 	#I will take the max of the return value, thus prioritizing if my opponent has a better connection
 	return(total_sum_black-total_sum_white)
-
+'''
 
 def is_time_exceeded(start_time):
 	return((time()-start_time) >= b.Board.time_limit)		
