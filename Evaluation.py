@@ -83,7 +83,7 @@ def evaluation(board):
 			if(total_size + 1 == 5):
 				sum_white += 100000 #if(COLOR != s.State.white) else 150000
 
-	for black_piece in board.black:
+	for black_pieces in board.black:
 		"""for each piece calculate all possible in a row connections and apply value"""
 		for pair in directions:
 			first_direction = board.check_connection(black_pieces, pair, b.Board.black_player)
